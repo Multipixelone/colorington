@@ -15,7 +15,6 @@ for media in plex.sessions():
     print(media.duration)
 
 for media in plex.sessions():
-    url = None
     if media.type == "track" and media.usernames[0] == "Tunnelmaker":
         print(media.title)
         filename = f"art_{media.parentTitle}.jpg"
